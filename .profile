@@ -14,5 +14,5 @@ export PATH="$PATH:`yarn global bin`"
 # customise terminal prompt
 export PS1="mac:\w$ "
 
-# OK clumsey fingers, you win
+# OK clumsy fingers, you win
 alias got=git
