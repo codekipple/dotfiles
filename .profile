@@ -12,8 +12,7 @@ export PATH="$HOME/bin/:/usr/local/bin:$PATH"
 export PATH="$PATH:`yarn global bin`"
 
 # customise terminal prompt
-# export PS1="\u@\h\w$ "
-# export PS1="\[\e[0;36m\]mac:\[\e[33m\]\w\[\e[0;97m\]$ "
 export PS1="mac:\w$ "
 
+# OK clumsey fingers, you win
 alias got=git
