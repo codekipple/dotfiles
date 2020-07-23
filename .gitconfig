@@ -1,30 +1,37 @@
 [color]
-	branch = auto
-	diff = auto
-	interactive = auto
-	status = auto
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
 [user]
-	name = codekipple
-	email = codekipple@gmail.com
+    name = codekipple
+    email = codekipple@gmail.com
 [push]
-	default = simple
+    default = simple
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
 
 [core]
-	excludesfile = /opt/boxen/config/git/gitignore
+    excludesfile = /Users/carl/.gitignore
 
 [hub]
 protocol = https
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path =
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
 [alias]
-	co = checkout
-	ci = commit
-	st = status
-	br = branch
-	di = diff
-	ad = add
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    di = diff
+    ad = add
 
+[merge]
+    conflictstyle = diff3
+[http]
+    postBuffer = 524288000
